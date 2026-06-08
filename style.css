@@ -1,6 +1,3 @@
-/* =========================
- GLOBAL / RESET
-========================= */
 * {
  box-sizing: border-box;
 }
@@ -8,18 +5,15 @@
 body {
  margin: 0;
  font-family: 'Montserrat', Arial, sans-serif;
- background-color: #e3bbbd;
- color: #59718a;
+ background-color: #1a1a2e;
+ color: #e0e0e0;
  background-size: cover;
  background-repeat: repeat-y;
  background-attachment: fixed;
 }
 
-/* =========================
- NAVBAR
-========================= */
 .navbar {
- background-color: #ffe9c5;
+ background-color: #16213e;
  padding: 1em 2em;
  display: flex;
  justify-content: space-between;
@@ -39,40 +33,31 @@ body {
 }
 
 .navbar-right a {
- color: #59718a;
+ color: #e0e0e0;
  text-decoration: none;
  font-weight: bold;
  transition: text-shadow 0.3s ease;
 }
 
 .navbar-right a:hover {
- color: #59718a; /* stays the same color */
- text-shadow: 0 0 8px #ffe9c5, 0 0 16px #ffe9c5, 0 0 24px #ffe9c5; /* neon glow */
+ color: #e0e0e0;
+ text-shadow: 0 0 8px #00ffff, 0 0 16px #00ffff, 0 0 24px #00ffff;
 }
 
-/* =========================
- PAGE LAYOUT
-========================= */
 .home-card {
  max-width: 1200px;
  margin: 2em auto;
  padding: 1em;
 }
 
-/* =========================
- CARDS
-========================= */
 .resource-card {
- background-color: #ffe9c5;
+ background-color: #16213e;
  margin: 2em auto;
  padding: 1.5em;
  border-radius: 12px;
- box-shadow: 0 0 12px rgba(223, 148, 157, 0.6);
+ box-shadow: 0 0 12px rgba(0, 255, 255, 0.2);
 }
 
-/* =========================
- BIO SECTION
-========================= */
 .bio {
  display: flex;
  flex-direction: column;
@@ -84,25 +69,22 @@ body {
  width: 150px;
  height: 150px;
  border-radius: 50%;
- border: 4px solid #59697a;
+ border: 4px solid #00ffff;
  object-fit: cover;
 }
 
 .bio-text h1 {
  margin-bottom: 0.2em;
- color: #59718a;
- text-shadow: 0 0 8px #ffe9c5, 0 0 16px #ffe9c5; /* neon glow on heading */
+ color: #00ffff;
+ text-shadow: 0 0 8px #00ffff, 0 0 16px #00ffff;
 }
 
 .bio-text h4 {
  margin-top: 0;
  font-weight: normal;
- color: #59697a;
+ color: #e0e0e0;
 }
 
-/* =========================
- PROJECT LAYOUT
-========================= */
 .project {
  display: flex;
  gap: 1.5em;
@@ -114,30 +96,27 @@ body {
  min-width: 320px;
  height: 450px;
  border: none;
- background-color: #ffe9c5;
+ background-color: #16213e;
  border-radius: 8px;
 }
 
 .reflection {
  flex: 1;
- background-color: #ffe9c5;
+ background-color: #16213e;
  padding: 1em;
  border-radius: 8px;
 }
 
 .reflection h3 {
  margin-top: 0;
- color: #59718a;
+ color: #00ffff;
 }
 
 .reflection p {
  font-size: 0.95em;
- color: #59718a;
+ color: #e0e0e0;
 }
 
-/* =========================
- LINKS / ICONS
-========================= */
 .skill-images {
  display: flex;
  justify-content: center;
@@ -157,31 +136,24 @@ body {
  height: 80px;
  width: 80px;
  border-radius: 10px;
- border: 3px solid #59697a;
+ border: 3px solid #00ffff;
  object-fit: cover;
 }
 
-/* =========================
- FOOTER
-========================= */
 footer {
  text-align: center;
  font-size: 0.85em;
- color: #59718a;
+ color: #e0e0e0;
 }
 
-/* =========================
- RESPONSIVE
-========================= */
 @media (max-width: 900px) {
 .project {
  flex-direction: column;
  }
-
 .project iframe {
  width: 100%;
  min-width: 0;
- height: 350px; 
+ height: 350px;
  }
 }
 
@@ -190,7 +162,6 @@ footer {
  flex-direction: column;
  gap: 1em;
  }
-
 .navbar-right {
  flex-wrap: wrap;
  justify-content: center;
