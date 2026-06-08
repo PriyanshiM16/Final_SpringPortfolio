@@ -9,7 +9,7 @@ body {
  margin: 0;
  font-family: 'Montserrat', Arial, sans-serif;
  background-color: #e3bbbd;
- color: #59718a; /* Updated */
+ color: #59718a;
  background-size: cover;
  background-repeat: repeat-y;
  background-attachment: fixed;
@@ -19,7 +19,7 @@ body {
  NAVBAR
 ========================= */
 .navbar {
- background-color: #ffe9c5; /* Updated */
+ background-color: #ffe9c5;
  padding: 1em 2em;
  display: flex;
  justify-content: space-between;
@@ -39,13 +39,15 @@ body {
 }
 
 .navbar-right a {
- color: #59718a; /* Updated */
+ color: #59718a;
  text-decoration: none;
  font-weight: bold;
+ transition: text-shadow 0.3s ease;
 }
 
 .navbar-right a:hover {
- color: #ffe9c5; /* Updated */
+ color: #59718a; /* stays the same color */
+ text-shadow: 0 0 8px #ffe9c5, 0 0 16px #ffe9c5, 0 0 24px #ffe9c5; /* neon glow */
 }
 
 /* =========================
@@ -61,7 +63,7 @@ body {
  CARDS
 ========================= */
 .resource-card {
- background-color: #ffe9c5; /* Updated */
+ background-color: #ffe9c5;
  margin: 2em auto;
  padding: 1.5em;
  border-radius: 12px;
@@ -82,19 +84,20 @@ body {
  width: 150px;
  height: 150px;
  border-radius: 50%;
- border: 4px solid #59697a; /* Updated */
+ border: 4px solid #59697a;
  object-fit: cover;
 }
 
 .bio-text h1 {
  margin-bottom: 0.2em;
- color: #59718a; /* Updated */
+ color: #59718a;
+ text-shadow: 0 0 8px #ffe9c5, 0 0 16px #ffe9c5; /* neon glow on heading */
 }
 
 .bio-text h4 {
  margin-top: 0;
  font-weight: normal;
- color: #59697a; /* Updated */
+ color: #59697a;
 }
 
 /* =========================
@@ -111,25 +114,25 @@ body {
  min-width: 320px;
  height: 450px;
  border: none;
- background-color: #ffe9c5; /* Updated */
+ background-color: #ffe9c5;
  border-radius: 8px;
 }
 
 .reflection {
  flex: 1;
- background-color: #ffe9c5; /* Updated */
+ background-color: #ffe9c5;
  padding: 1em;
  border-radius: 8px;
 }
 
 .reflection h3 {
  margin-top: 0;
- color: #59718a; /* Updated */
+ color: #59718a;
 }
 
 .reflection p {
  font-size: 0.95em;
- color: #59718a; /* Updated */
+ color: #59718a;
 }
 
 /* =========================
@@ -154,7 +157,7 @@ body {
  height: 80px;
  width: 80px;
  border-radius: 10px;
- border: 3px solid #59697a; /* Updated */
+ border: 3px solid #59697a;
  object-fit: cover;
 }
 
@@ -164,7 +167,7 @@ body {
 footer {
  text-align: center;
  font-size: 0.85em;
- color: #59718a; /* Updated */
+ color: #59718a;
 }
 
 /* =========================
